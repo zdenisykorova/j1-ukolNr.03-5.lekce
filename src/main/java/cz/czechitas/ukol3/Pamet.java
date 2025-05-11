@@ -13,12 +13,13 @@ public class Pamet {
         Objects.requireNonNull(kapacitaPamet);
         if (kapacitaPamet < 0){
             System.err.println("Musí být vyplněna kapacita paměti počítače.");
+            return;
         }
         this.kapacitaPamet = kapacitaPamet;
     }
 
     @Override
     public String toString() {
-        return kapacitaPamet + " " + "byte";
+        return "kapacita pameti " + kapacitaPamet + " " + "byte";
     }
 }

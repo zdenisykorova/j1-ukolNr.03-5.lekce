@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class Disk {
     private long kapacitaDisk;
-    private long vyuziteMisto;
 
     public long getKapacitaDisk() {
         return kapacitaDisk;
@@ -14,12 +13,27 @@ public class Disk {
         Objects.requireNonNull(kapacitaDisk);
         if (kapacitaDisk < 0) {
             System.err.println("Kapacita disku nemůže být záporné číslo.");
+            return;
         }
         this.kapacitaDisk = kapacitaDisk;
     }
 
+    private long vyuziteMisto;
+
+        public long getVyuziteMisto() {
+            return vyuziteMisto;
+        }
+
+        public void setVyuziteMisto(long vyuziteMisto) {
+            Objects.requireNonNull(vyuziteMisto);
+            if (vyuziteMisto < 0) {
+                System.err.println("Vyuzite misto nemuze byt zaporne cislo.");
+                return;
+            }
+        }
+
     @Override
     public String toString() {
-        return "kapacita disku" + kapacitaDisk + " byte;" + "vyuzite misto"+ vyuziteMisto + " byte";
+        return "kapacita disku " + kapacitaDisk + " byte;" + " vyuzite misto "+ vyuziteMisto + " byte";
     }
 }
