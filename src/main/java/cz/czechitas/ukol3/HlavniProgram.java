@@ -10,22 +10,26 @@ public class HlavniProgram {
         System.out.println("Program spuštěn.");
 
         Pamet mojePamet = new Pamet();
-        mojePamet.setKapacitaPamet(100999888);
+        mojePamet.setKapacitaPamet(100_999_888);
             System.out.println(mojePamet);
 
-        Disk pevnyDisk = new Disk();
-        pevnyDisk.setKapacitaDisk(100999888);
-        pevnyDisk.setVyuziteMisto(234567890);
-            System.out.println(pevnyDisk);
+        Disk mujDisk = new Disk();
+        mujDisk.setKapacitaDisk(300_999_888);
+        mujDisk.setVyuziteMisto(234_567_890);
+            System.out.println(mujDisk);
 
-        Procesor cpu = new Procesor();
-        cpu.setNazevProcesor("ava");
-        cpu.setRychlost(10000000);
-            System.out.println(cpu);
+        Procesor mujProcesor = new Procesor();
+        mujProcesor.setNazevProcesor("Intel");
+        mujProcesor.setRychlost(10_000_000);
+            System.out.println(mujProcesor);
 
         Pocitac mujPocitac = new Pocitac();
+        mujPocitac.setCpu(mujProcesor);
+        mujPocitac.setRam(mojePamet);
+        mujPocitac.setPevnyDisk(mujDisk);
         mujPocitac.setZapniSe(mujPocitac.zapniSe);
             System.out.println(mujPocitac);
+
     }
 
 }

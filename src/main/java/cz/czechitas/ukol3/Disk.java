@@ -30,6 +30,7 @@ public class Disk {
                 System.err.println("Vyuzite misto nemuze byt zaporne cislo.");
                 return;
             }
+
         }
 
     @Override
