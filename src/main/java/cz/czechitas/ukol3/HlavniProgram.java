@@ -31,5 +31,4 @@ public class HlavniProgram {
             System.out.println(mujPocitac);
 
     }
-
 }
