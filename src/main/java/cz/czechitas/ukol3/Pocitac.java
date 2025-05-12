@@ -11,6 +11,11 @@ public class Pocitac {
     }
 
     public void setCpu(Procesor cpu) {
+        Objects.requireNonNull(cpu);
+        if (cpu == null) {
+            System.err.println("Vypis procesor. Pocitac se nezapnul.");
+            return;
+        }
         this.cpu = cpu;
     }
 
@@ -21,12 +26,20 @@ public class Pocitac {
     }
 
     public void setRam(Pamet ram) {
+        Objects.requireNonNull(ram);
+        if (ram == null) {
+            System.err.println("Vypis pamet. Pocitac se nezapnul.");
+        }
         this.ram = ram;
     }
 
     private Disk pevnyDisk;
 
     public Disk getPevnyDisk() {
+        Objects.requireNonNull(pevnyDisk);
+        if (pevnyDisk == null) {
+            System.err.println("Vypis disk. Pocitac se nezapnul.");
+        }
         return pevnyDisk;
     }
 
@@ -56,35 +69,22 @@ public class Pocitac {
         while (jeZapnuty) {
             if (jeZapnuty) ;
             System.err.println("Pocitac nejde zapnout dvakrat.");
-
             return;
         }
-
-        //ř.64-77 nejak nejdou spustit v hlavní metodě
-        if (cpu == null) {
-            System.err.println("Vypis procesor.Pocitac se nezapnul.");
-            return;
-        }
-
-        if (ram == null) {
-            System.err.println("Vypis pamet.Pocitac se nezapnul.");
-            return;
-        }
-
-        if (pevnyDisk == null) {
-            System.err.println("Vypis disk.Pocitac se nezapnul.");
-            return;
-        }
-
     }
 
     public void vypniSe() {
-        this.jeZapnuty = !jeZapnuty;
-        System.out.println("Pocitac se vypnul.");
-
+            this.jeZapnuty = !jeZapnuty;
+            System.out.println("Pocitac se vypnul.");
+    //je možné opakované vypnutí a nic se nestane
+            while (!jeZapnuty) {
+                if (!jeZapnuty);
+                return;
+            }
+        }
 
     }
-}
+
 
 
 

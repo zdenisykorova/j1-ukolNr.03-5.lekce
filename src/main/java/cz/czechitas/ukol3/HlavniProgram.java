@@ -30,9 +30,8 @@ public class HlavniProgram {
         mujPocitac.zapniSe();
             System.out.println(mujPocitac);
 
-        Pocitac mujPocitac1 = new Pocitac();
         mujPocitac.zapniSe();
-        mujPocitac1.vypniSe();
+        mujPocitac.vypniSe();
         mujPocitac.vypniSe();
 
 
