@@ -84,7 +84,18 @@ public class Pocitac {
         }
 
         //co se tou metodou na přičtení???
-    public void vytvorSouborOVelikosti (long velikost) {
+    private long velikost;
+    public long getVelikost() {
+        return velikost;
+    }
+    public void setVelikost(long velikost) {
+        this.velikost = velikost;
+        return;
+    }
+
+    public void vytvorSouborOVelikosti (long velikost, Disk vyuziteMisto) {
+
+        long = velikost += vyuziteMisto;
 
         }
 
