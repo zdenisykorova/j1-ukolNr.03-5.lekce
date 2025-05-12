@@ -56,20 +56,37 @@ public class Pocitac {
         while (jeZapnuty) {
             if (jeZapnuty) ;
             System.err.println("Pocitac nejde zapnout dvakrat.");
+
             return;
         }
+
+        //ř.64-77 nejak nejdou spustit v hlavní metodě
+        if (cpu == null) {
+            System.err.println("Vypis procesor.Pocitac se nezapnul.");
+            return;
+        }
+
+        if (ram == null) {
+            System.err.println("Vypis pamet.Pocitac se nezapnul.");
+            return;
+        }
+
+        if (pevnyDisk == null) {
+            System.err.println("Vypis disk.Pocitac se nezapnul.");
+            return;
+        }
+
     }
 
     public void vypniSe() {
-        this.jeZapnuty =! jeZapnuty;
+        this.jeZapnuty = !jeZapnuty;
         System.out.println("Pocitac se vypnul.");
 
 
-
-        }
-
-
     }
+}
+
+
 
 
 
