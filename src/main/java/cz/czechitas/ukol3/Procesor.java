@@ -31,6 +31,7 @@ public class Procesor {
             System.err.println("Musi byt vyplnena rychlost pocitace.");
             return;
         }
+            this.rychlost = rychlost;
     }
 
     @Override

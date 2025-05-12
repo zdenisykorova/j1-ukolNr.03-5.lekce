@@ -33,6 +33,11 @@ public class Pocitac {
         this.pevnyDisk = pevnyDisk;
     }
 
+    @Override
+    public String toString() {
+        return cpu + "," + ram + "," + pevnyDisk;
+    }
+
     boolean jeZapnuty = true;
 
     public boolean isJeZapnuty() {
@@ -43,10 +48,6 @@ public class Pocitac {
         this.jeZapnuty = jeZapnuty;
     }
 
-    @Override
-    public String toString() {
-        return cpu + "," + ram + "," + pevnyDisk;
-    }
 
 
 
