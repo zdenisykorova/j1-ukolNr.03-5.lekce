@@ -9,6 +9,7 @@ public class Pocitac {
     public Procesor getCpu() {
         return cpu;
     }
+
     public void setCpu(Procesor cpu) {
         this.cpu = cpu;
     }
@@ -48,33 +49,17 @@ public class Pocitac {
         this.jeZapnuty = jeZapnuty;
     }
 
+    public void zapniSe() {
+        this.jeZapnuty = jeZapnuty;
+        System.out.println("Pocitac se zapnul.");
 
-
-
-
-    //to ale není, co je v úkolu
-    private long velikost;
-    public long getVelikost() {
-        return velikost;
-    }
-    public void setVelikost(long velikost) {
-        Objects.requireNonNull(velikost);
-        if (velikost < 0) {
-            System.err.println("Napiš velikost souboru.");
-        }
-        this.velikost = velikost;
-    }
-
-    //to ale není, co je v úkolu
-    public void vytvorSouborOVelikosti (long velikost, long vyuziteMisto, long kapacitaDisk) {
-
-        if (velikost + vyuziteMisto > kapacitaDisk) {
-            System.err.println("Kapacita disku je nedostatecna pro ulozeni souboru.");
+        while (jeZapnuty) {
+            if (jeZapnuty) ;
+            System.err.println("Pocitac nejde zapnout dvakrat.");
+            return;
         }
     }
-
 }
-
 
 
 
