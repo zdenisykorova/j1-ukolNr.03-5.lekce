@@ -15,6 +15,7 @@ public class Pamet {
             System.err.println("Musí být vyplněna kapacita paměti počítače.");
             return;
         }
+
         this.kapacitaPamet = kapacitaPamet;
     }
 

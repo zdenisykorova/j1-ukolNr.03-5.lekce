@@ -35,6 +35,7 @@ public class HlavniProgram {
         mujPocitac.vypniSe();
 
 
+
     }
 }
 

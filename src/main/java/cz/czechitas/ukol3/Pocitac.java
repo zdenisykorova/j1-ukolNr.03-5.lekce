@@ -11,7 +11,7 @@ public class Pocitac {
     }
 
     public void setCpu(Procesor cpu) {
-        Objects.requireNonNull(cpu);
+        Objects.requireNonNull(cpu); //nic to nedělá
         if (cpu == null) {
             System.err.println("Vypis procesor. Pocitac se nezapnul.");
             return;
@@ -26,7 +26,7 @@ public class Pocitac {
     }
 
     public void setRam(Pamet ram) {
-        Objects.requireNonNull(ram);
+        Objects.requireNonNull(ram); //nic to nedělá
         if (ram == null) {
             System.err.println("Vypis pamet. Pocitac se nezapnul.");
         }
@@ -36,7 +36,7 @@ public class Pocitac {
     private Disk pevnyDisk;
 
     public Disk getPevnyDisk() {
-        Objects.requireNonNull(pevnyDisk);
+        Objects.requireNonNull(pevnyDisk); //nic to nedělá
         if (pevnyDisk == null) {
             System.err.println("Vypis disk. Pocitac se nezapnul.");
         }
@@ -76,11 +76,23 @@ public class Pocitac {
     public void vypniSe() {
             this.jeZapnuty = !jeZapnuty;
             System.out.println("Pocitac se vypnul.");
-    //je možné opakované vypnutí a nic se nestane
+    //je možné opakované vypnutí a nic se nestane, ale hláška o vypnutí se vypíše.
             while (!jeZapnuty) {
                 if (!jeZapnuty);
                 return;
             }
+        }
+
+        //co se tou metodou na přičtení???
+    public void vytvorSouborOVelikosti (long velikost) {
+
+        }
+
+
+
+
+    public void vymazSouborOVelikosti (long velikost) {
+
         }
 
     }
