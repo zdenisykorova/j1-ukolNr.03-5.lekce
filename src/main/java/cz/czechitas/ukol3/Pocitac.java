@@ -45,7 +45,7 @@ public class Pocitac {
 
     @Override
     public String toString() {
-        return "procesor " + cpu + "," + " pamet" + ram + " byte" + "," + " pevny disk" + pevnyDisk + "byte";
+        return cpu + "," + ram + "," + pevnyDisk;
     }
 
 

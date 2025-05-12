@@ -27,7 +27,7 @@ public class HlavniProgram {
         mujPocitac.setCpu(mujProcesor);
         mujPocitac.setRam(mojePamet);
         mujPocitac.setPevnyDisk(mujDisk);
-        mujPocitac.setZapniSe(mujPocitac.zapniSe);
+
             System.out.println(mujPocitac);
 
     }
