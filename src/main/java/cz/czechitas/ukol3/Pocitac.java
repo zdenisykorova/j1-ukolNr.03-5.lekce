@@ -59,7 +59,18 @@ public class Pocitac {
             return;
         }
     }
-}
+
+    public void vypniSe() {
+        this.jeZapnuty =! jeZapnuty;
+        System.out.println("Pocitac se vypnul.");
+
+
+
+        }
+
+
+    }
+
 
 
 

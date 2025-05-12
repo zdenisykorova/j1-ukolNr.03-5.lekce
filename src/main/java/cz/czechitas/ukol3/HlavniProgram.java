@@ -32,6 +32,8 @@ public class HlavniProgram {
 
         Pocitac mujPocitac1 = new Pocitac();
         mujPocitac.zapniSe();
+        mujPocitac1.vypniSe();
+
 
     }
 }
