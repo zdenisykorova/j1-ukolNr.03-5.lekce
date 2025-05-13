@@ -88,14 +88,6 @@ public class Pocitac {
 
 
         //přičtení,odečtení - část 2
-    private long velikost;
-    public long getVelikost() {
-        return velikost;
-    }
-    public void setVelikost(long velikost) {
-        this.velikost = velikost;
-        return;
-    }
 
     public void vytvorSouborOVelikosti (long velikost) {
         long aktualni = pevnyDisk.getVyuziteMisto();
