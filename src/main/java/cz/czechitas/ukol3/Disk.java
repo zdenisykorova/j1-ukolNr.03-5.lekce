@@ -30,6 +30,9 @@ public class Disk {
                 System.err.println("Vyuzite misto nemuze byt zaporne cislo.");
                 return;
             }
+                this.vyuziteMisto = vyuziteMisto;
+
+            Objects.requireNonNull(vyuziteMisto);
             if (vyuziteMisto > kapacitaDisk) {
                 System.err.println("Neni misto na disku.");
             }

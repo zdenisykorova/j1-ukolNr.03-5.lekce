@@ -13,7 +13,7 @@ public class Pocitac {
     public void setCpu(Procesor cpu) {
         Objects.requireNonNull(cpu); //nic to nedělá
         if (cpu == null) {
-            System.err.println("Vypis procesor. Pocitac se nezapnul.");
+            System.err.println("Vypis procesor.");
             return;
         }
         this.cpu = cpu;
@@ -28,7 +28,7 @@ public class Pocitac {
     public void setRam(Pamet ram) {
         Objects.requireNonNull(ram); //nic to nedělá
         if (ram == null) {
-            System.err.println("Vypis pamet. Pocitac se nezapnul.");
+            System.err.println("Vypis pamet.");
         }
         this.ram = ram;
     }
@@ -38,7 +38,7 @@ public class Pocitac {
     public Disk getPevnyDisk() {
         Objects.requireNonNull(pevnyDisk); //nic to nedělá
         if (pevnyDisk == null) {
-            System.err.println("Vypis disk. Pocitac se nezapnul.");
+            System.err.println("Vypis disk.");
         }
         return pevnyDisk;
     }
@@ -63,11 +63,15 @@ public class Pocitac {
     }
 
     public void zapniSe() {
+
+        if (cpu == null || ram == null || pevnyDisk == null) {
+            System.err.println("Pocitac se nezapnul.");
+            return;
+        }
+
         this.jeZapnuty = jeZapnuty;
         System.out.println("Pocitac se zapnul.");
-
-        while (jeZapnuty) {
-            if (jeZapnuty) ;
+        if (jeZapnuty) {
             System.err.println("Pocitac nejde zapnout dvakrat.");
             return;
         }
@@ -76,14 +80,14 @@ public class Pocitac {
     public void vypniSe() {
             this.jeZapnuty = !jeZapnuty;
             System.out.println("Pocitac se vypnul.");
-    //je možné opakované vypnutí a nic se nestane, ale hláška o vypnutí se vypíše.
-            while (!jeZapnuty) {
-                if (!jeZapnuty);
+
+                if (!jeZapnuty) {
                 return;
             }
         }
 
-        //co se tou metodou na přičtení???
+
+        //přičtení,odečtení - část 2
     private long velikost;
     public long getVelikost() {
         return velikost;
@@ -93,17 +97,16 @@ public class Pocitac {
         return;
     }
 
-    public void vytvorSouborOVelikosti (long velikost, Disk vyuziteMisto) {
-
-        long = velikost += vyuziteMisto;
-
+    public void vytvorSouborOVelikosti (long velikost) {
+        long aktualni = pevnyDisk.getVyuziteMisto();
+        pevnyDisk.setVyuziteMisto(aktualni + velikost);
+        return;
         }
 
-
-
-
     public void vymazSouborOVelikosti (long velikost) {
-
+        long aktualni1 = pevnyDisk.getVyuziteMisto();
+        pevnyDisk.setVyuziteMisto(aktualni1 - velikost);
+        return;
         }
 
     }

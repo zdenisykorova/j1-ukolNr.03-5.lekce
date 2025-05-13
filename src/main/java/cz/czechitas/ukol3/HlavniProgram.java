@@ -9,6 +9,10 @@ public class HlavniProgram {
         //TODO tady bude váš kód - vytvoření instance třídy Pocitac, zapnutí, vpynutí, výpis hodnot.
         System.out.println("Program spuštěn.");
 
+        //Pocitac petruvPocitac = new Pocitac();
+        //petruvPocitac.zapniSe();
+
+
         Pamet mojePamet = new Pamet();
         mojePamet.setKapacitaPamet(100_999_888);
             System.out.println(mojePamet);
@@ -34,7 +38,9 @@ public class HlavniProgram {
         mujPocitac.vypniSe();
         mujPocitac.vypniSe();
 
-
+        mujPocitac.vymazSouborOVelikosti(234_567_900);
+        mujPocitac.vytvorSouborOVelikosti(234_567_890);
+        mujPocitac.vytvorSouborOVelikosti(60_999_888);
 
     }
 }
