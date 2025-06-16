@@ -60,7 +60,7 @@ public class Pocitac {
     }
 
     //public void setJeZapnuty(boolean jeZapnuty) {
-        //this.jeZapnuty = jeZapnuty;}  //špatně oba řádky
+    //this.jeZapnuty = jeZapnuty;}  //špatně oba řádky
 
     public void zapniSe() {
 
@@ -79,31 +79,31 @@ public class Pocitac {
     }
 
     public void vypniSe() {
-            //this.jeZapnuty = !jeZapnuty; //špatně
-            //System.out.println("Pocitac se vypnul."); //špatně
+        //this.jeZapnuty = !jeZapnuty; //špatně
+        //System.out.println("Pocitac se vypnul."); //špatně
 
-                if (!jeZapnuty) {
-                return;
-            }
-                jeZapnuty = false;
+        if (!jeZapnuty) {
+            return;
         }
+        jeZapnuty = false;
+    }
 
 
-        //přičtení,odečtení - část 2
+    //přičtení,odečtení - část 2
 
-    public void vytvorSouborOVelikosti (long velikost) {
+    public void vytvorSouborOVelikosti(long velikost) {
         long aktualni = pevnyDisk.getVyuziteMisto();
         pevnyDisk.setVyuziteMisto(aktualni + velikost);
         return;
-        }
+    }
 
-    public void vymazSouborOVelikosti (long velikost) {
+    public void vymazSouborOVelikosti(long velikost) {
         long aktualni1 = pevnyDisk.getVyuziteMisto();
         pevnyDisk.setVyuziteMisto(aktualni1 - velikost);
         return;
-        }
-
     }
+
+}
 
 
 

@@ -12,10 +12,10 @@ public class Procesor {
 
     public void setNazevProcesor(String nazevProcesor) {
         Objects.requireNonNull(nazevProcesor);
-            if (nazevProcesor.isBlank()) {
-                System.err.println("Napis nazev procesoru.");
-                return;
-            }
+        if (nazevProcesor.isBlank()) {
+            System.err.println("Napis nazev procesoru.");
+            return;
+        }
         this.nazevProcesor = nazevProcesor;
     }
 
@@ -31,7 +31,7 @@ public class Procesor {
             System.err.println("Musi byt vyplnena rychlost pocitace.");
             return;
         }
-            this.rychlost = rychlost;
+        this.rychlost = rychlost;
     }
 
     @Override

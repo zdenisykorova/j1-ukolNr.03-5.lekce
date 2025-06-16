@@ -11,7 +11,7 @@ public class Pamet {
 
     public void setKapacitaPamet(long kapacitaPamet) {
         Objects.requireNonNull(kapacitaPamet);
-        if (kapacitaPamet < 0){
+        if (kapacitaPamet < 0) {
             System.err.println("Musí být vyplněna kapacita paměti počítače.");
             return;
         }
