@@ -52,15 +52,15 @@ public class Pocitac {
         return cpu + "," + ram + "," + pevnyDisk;
     }
 
-    boolean jeZapnuty = true;
+    //boolean jeZapnuty = true; //špatně
+    boolean jeZapnuty = false;
 
-    public boolean isJeZapnuty() {
+    public boolean JeZapnuty() {
         return jeZapnuty;
     }
 
-    public void setJeZapnuty(boolean jeZapnuty) {
-        this.jeZapnuty = jeZapnuty;
-    }
+    //public void setJeZapnuty(boolean jeZapnuty) {
+        //this.jeZapnuty = jeZapnuty;}  //špatně oba řádky
 
     public void zapniSe() {
 
@@ -69,21 +69,23 @@ public class Pocitac {
             return;
         }
 
-        this.jeZapnuty = jeZapnuty;
-        System.out.println("Pocitac se zapnul.");
+        //this.jeZapnuty = jeZapnuty; //špatně
+        //System.out.println("Pocitac se zapnul."); //špatně
         if (jeZapnuty) {
             System.err.println("Pocitac nejde zapnout dvakrat.");
             return;
         }
+        jeZapnuty = true;
     }
 
     public void vypniSe() {
-            this.jeZapnuty = !jeZapnuty;
-            System.out.println("Pocitac se vypnul.");
+            //this.jeZapnuty = !jeZapnuty; //špatně
+            //System.out.println("Pocitac se vypnul."); //špatně
 
                 if (!jeZapnuty) {
                 return;
             }
+                jeZapnuty = false;
         }
 
 
