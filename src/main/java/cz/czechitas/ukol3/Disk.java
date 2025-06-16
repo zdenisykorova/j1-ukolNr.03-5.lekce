@@ -4,6 +4,7 @@ import java.util.Objects;
 
 public class Disk {
     private long kapacitaDisk;
+    private long vyuziteMisto;
 
     public long getKapacitaDisk() {
         return kapacitaDisk;
@@ -18,7 +19,7 @@ public class Disk {
         this.kapacitaDisk = kapacitaDisk;
     }
 
-    private long vyuziteMisto;
+    //private long vyuziteMisto; //psát na začátek
 
     public long getVyuziteMisto() {
         return vyuziteMisto;

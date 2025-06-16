@@ -5,6 +5,8 @@ import java.util.Objects;
 public class Pocitac {
 
     private Procesor cpu;
+    private Pamet ram;
+    private Disk pevnyDisk;
 
     public Procesor getCpu() {
         return cpu;
@@ -19,7 +21,7 @@ public class Pocitac {
         this.cpu = cpu;
     }
 
-    private Pamet ram;
+    //private Pamet ram; //psát na začátek
 
     public Pamet getRam() {
         return ram;
@@ -33,7 +35,7 @@ public class Pocitac {
         this.ram = ram;
     }
 
-    private Disk pevnyDisk;
+    //private Disk pevnyDisk; //psát na začátek
 
     public Disk getPevnyDisk() {
         Objects.requireNonNull(pevnyDisk); //nic to nedělá

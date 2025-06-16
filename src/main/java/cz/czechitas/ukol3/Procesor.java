@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Procesor {
 
     private String nazevProcesor;
+    private long rychlost;
 
     public String getNazevProcesor() {
         return nazevProcesor;
@@ -19,7 +20,7 @@ public class Procesor {
         this.nazevProcesor = nazevProcesor;
     }
 
-    private long rychlost;
+    //private long rychlost; //psát na začátek
 
     public long getRychlost() {
         return rychlost;
