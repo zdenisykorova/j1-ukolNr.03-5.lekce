@@ -28,6 +28,7 @@ public class HlavniProgram {
         System.out.println(mujProcesor);
 
         Pocitac mujPocitac = new Pocitac();
+        //mujPocitac.setCpu(null);
         mujPocitac.setCpu(mujProcesor);
         mujPocitac.setRam(mojePamet);
         mujPocitac.setPevnyDisk(mujDisk);
