@@ -36,6 +36,7 @@ public class Disk {
         //Objects.requireNonNull(vyuziteMisto); //špatně
         if (vyuziteMisto > kapacitaDisk) {
             System.err.println("Neni misto na disku.");
+            return;  //revize úkolu
         }
         this.vyuziteMisto = vyuziteMisto;
     }
